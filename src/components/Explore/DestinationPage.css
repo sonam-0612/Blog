@@ -1,0 +1,128 @@
+.destination-page {
+    background-color: #fff;
+    color: #444;
+    max-width: 1300px; /* Limits the max-width of the page */
+    margin: 30px auto;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f1f1f1;
+}
+
+/* Ensure the image does not go beyond the container */
+.destination-image {
+    width: 100%;
+    max-width: 100%; /* Ensures image does not overflow */
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: cover; /* Ensures the image covers the area properly without distortion */
+    margin-bottom: 20px; /* Adds space below the image */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2d7fd7;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+    border-bottom: 2px solid #92a7be;
+    padding-bottom: 10px;
+}
+
+.attractions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.attraction {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.attraction:hover {
+    transform: translateY(-5px);
+}
+
+.attraction img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.attraction h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.map-iframe {
+    border: 0;
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-reviews {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.user-reviews p {
+    color: #555;
+    font-style: italic;
+}
+
+/* Dark mode for attractions */
+.dark-mode .attraction {
+    background-color: #444;
+    color: #f1f1f1;
+}
+
+.dark-mode .attraction h2 {
+    color: #d2c3a8;
+}
+.dark-mode .attraction h3 {
+    color: #ffa500;
+}
+
+.dark-mode .attraction p {
+    color: #ddd;
+}
+
+.toggle-container {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.toggle-dark-mode {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.toggle-dark-mode:hover {
+    background-color: #0056b3;
+}
